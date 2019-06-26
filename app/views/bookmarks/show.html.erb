@@ -7,7 +7,8 @@
 
 <p>
   <strong>Url:</strong>
-  <%= @bookmark.url %>
+  <%= @preview.to_s.html_safe %>
+
 </p>
 
 <%= link_to 'Edit', edit_bookmark_path(@bookmark) %> |

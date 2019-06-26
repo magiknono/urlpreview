@@ -4,12 +4,15 @@ class BookmarksController < ApplicationController
   # GET /bookmarks
   # GET /bookmarks.json
   def index
+
     @bookmarks = Bookmark.all
   end
 
   # GET /bookmarks/1
   # GET /bookmarks/1.json
   def show
+    @preview = Onebox.preview( @bookmark.url)
+
   end
 
   # GET /bookmarks/new
