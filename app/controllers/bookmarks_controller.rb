@@ -12,7 +12,6 @@ class BookmarksController < ApplicationController
   # GET /bookmarks/1.json
   def show
     @preview = Onebox.preview( @bookmark.url)
-
   end
 
   # GET /bookmarks/new
